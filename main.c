@@ -4,7 +4,7 @@ int perfect(int num){
     int i = 1;
     int total = 0;
    while(i < num){
-      if(num % i == 0)
+      if(!(num % i))
          total += i;
     i++;
    }
@@ -18,11 +18,9 @@ int perfect(int num){
 int main()
 {
     int num;
-    int result;
     printf("Please enter a number\n");
     scanf("%d",&num);
-    result = perfect(num);
-    if(result == 1)
+    if(perfect(num))
         printf("%d  number is the perfect number",num);
     else
         printf("%d number is the perfect number not",num);
