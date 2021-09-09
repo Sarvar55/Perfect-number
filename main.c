@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-int perfect(int num){
+int isPerfect(int num){
     int i = 1;
     int total = 0;
    while(i < num){
@@ -20,7 +20,7 @@ int main()
     int num;
     printf("Please enter a number\n");
     scanf("%d",&num);
-    if(perfect(num))
+    if(isPerfect(num))
         printf("%d  number is the perfect number",num);
     else
         printf("%d number is the perfect number not",num);
